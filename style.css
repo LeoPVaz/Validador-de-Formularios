@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #1d201e;
+    overflow-x: hidden;
+}
+
+a {
+    color: rgb(95, 253, 32);
+}
+
+a:hover {
+    color: white
+}
+
+p{
+    color: white;
+    padding: 20px;
+    margin-bottom: 60px;
+    margin-top: 70px;
+}
+.screen {
+    display: flex;
+    width: 100vw;
+}
+
+.leftside {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftside img {
+    max-width:300px;
+    height: auto;
+    
+}
+.slider{
+    width: 500px;
+    height:500px;
+    overflow: hidden;
+}
+.slider--width {
+    display: flex;
+    height: 100%;
+    transition: all ease 0.3s;
+}
+.slider--item {
+    width: 100vw;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.tituloSlider{
+    color: #fff;
+    text-shadow: 0px 2px 2px #333;
+    font-size: 40px;
+}
+
+
+.rightside {
+    width: 700px;
+    height: 500px;
+    padding: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.formulario {
+    position: relative;
+    background-color: #2F4554;
+    width: 380px;
+    height: 420px;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+
+
+.formulario::before,
+.formulario::after {
+    content: "";
+    z-index: -1;
+    top: -15px;
+    left: -16px;
+    position: absolute;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200FF, #FF0055, #FF0000, #ffff00, #00ff00, #0099ff, #001aff);
+    background-size: 300%;
+    border-radius: 8px;
+    animation: animarBorda 8s linear infinite;
+}
+
+@keyframes animarBorda {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: 300%;
+    }
+}
+
+.formulario::after {
+    filter: blur(50px);
+}
+
+.rightside label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.rightside input {
+    outline: 0;
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.error {
+    font-size: 11px;
+    background-color: black;
+    color: white;
+    padding: 4px;
+    margin-top: 3px;
+    border-radius: 5px;
+}

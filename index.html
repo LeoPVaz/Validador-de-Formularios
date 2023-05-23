@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Validador de Formulário</title>
+</head>
+
+<body>
+    <div class="screen">
+        <div class="leftside">
+            <div class="slider">
+                <div class="slider--width" style="width: calc(100vw * 6); ">
+                    <div class="slider--item" style="background-image:url(images/1.jpg); width: 500px;">
+                        <span class="tituloSlider">Nunca Se Renda</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam pariatur, similique eligendi nisi odio sunt. Aut modi corporis consequuntur odio?</p>
+                    </div>
+                    <div class="slider--item " style="background-image:url(images/2.jpg); width: 500px">
+                        <span class="tituloSlider">Jogar e Melhor com os Amigos</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>
+                    <div class="slider--item " style="background-image:url(images/3.jpg); width: 500px">
+                        <span class="tituloSlider">Interatividade e Imersão para seu Jogos</span> 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nihil est illo. Quis accusantium quas, quos laudantium dicta assumenda corrupti voluptatum libero magni excepturi, earum nam suscipit facilis possimus quibusdam.</p> 
+                    </div>
+                    <div class="slider--item " style="background-image:url(images/4.jpg); width: 500px">
+                        <span class="tituloSlider">Produtos de Alta Qualidade</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facere id vero laboriosam magnam deserunt voluptates qui, explicabo commodi consequatur necessitatibus recusandae quisquam non illum? Nesciunt quia soluta reprehenderit hic.</p>  
+                    </div>
+                    <div class="slider--item " style="background-image:url(images/5.jpg); width: 500px">
+                        <span class="tituloSlider">Venca Mais com os Melhore Equipamentos Gamers</span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere obcaecati sed eos cumque, illo quis. Porro ipsam pariatur dolorum dolor, quasi velit ad hic perspiciatis fugiat eos delectus blanditiis veritatis!</p>   
+                    </div>
+                    <div class="slider--item " style="background-image:url(images/6.jpg); width: 500px">
+                        <span class="tituloSlider">Teclados Personalizados</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum odio molestias excepturi eaque quisquam? Atque optio exercitationem dolor numquam nemo commodi, totam, eius nihil praesentium hic quam? Dolore, magnam labore.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightside">
+            <div class="formulario">
+                <h1>Crie uma Conta</h1>
+
+                <form action="cadastro.php" method="post" class="validador">
+                    <label>
+                        Seu nome:<br>
+                        <input type="text" name="nome" data-rules="required|min=2">
+                    </label>
+                    <label>
+                        Seu e-mail:<br>
+                        <input type="text" name="email" data-rules="required|email">
+                    </label>
+                    <label>
+                        Seu senha:<br>
+                        <input type="password" name="password">
+                    </label>
+                    <label>
+                        <input class="botao" type="submit" value="Cadastre-se">
+                    </label>
+                </form>
+
+                <div>
+                    Já tem uma conta? <a href="">Faça Login</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
